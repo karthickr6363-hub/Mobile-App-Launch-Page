@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Lumina - Join the Frontier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .register-card {
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] p-6">
+
+    <div class="register-card glass-card reveal active">
+        <div class="text-center mb-8">
+            <a href="index.html" class="inline-flex items-center gap-3 group mb-6">
+                <div
+                    class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform shadow-lg shadow-indigo-600/30">
+                    <span class="text-white font-bold text-2xl">L</span>
+                </div>
+                <span class="text-2xl font-bold tracking-tight brand-text">Lumina</span>
+            </a>
+            <h1 class="text-3xl font-bold mb-2">Create Your Account</h1>
+            <p class="text-gray-500 text-sm">Join 5,000+ developers scaling their apps with Lumina.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <button
+                class="flex items-center justify-center gap-2 border border-gray-800 rounded-lg py-3 hover:bg-gray-800 transition-colors">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12.48 10.92v3.28h7.84c-.24 1.84-.908 3.153-1.859 4.075-2.492 2.492-5.925 2.492-8.354 0-2.429-2.429-2.429-5.925 0-8.354 2.429-2.429 5.925-2.429 8.354 0 .393.393.74.832 1.036 1.31l2.583-1.492C21.464 7.625 18.064 4.5 13.5 4.5 8.81 4.5 5 8.31 5 13s3.81 8.5 8.5 8.5c2.44 0 4.5-.81 6.13-2.42 1.63-1.61 2.37-3.83 2.37-5.58 0-.58-.06-1.15-.17-1.58h-9.35z" />
+                </svg>
+                <span class="text-sm font-medium">Google</span>
+            </button>
+            <button
+                class="flex items-center justify-center gap-2 border border-gray-800 rounded-lg py-3 hover:bg-gray-800 transition-colors">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                </svg>
+                <span class="text-sm font-medium">Facebook</span>
+            </button>
+        </div>
+
+        <div class="relative mb-8">
+            <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-gray-800"></div>
+            </div>
+            <div class="relative flex justify-center text-xs uppercase"><span class="bg-[#0f172a] px-2 text-gray-500">Or
+                    continue with email</span></div>
+        </div>
+
+        <form class="space-y-5">
+            <div>
+                <label class="block text-sm font-medium mb-2 opacity-70">Full Name</label>
+                <input type="text"
+                    class="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+                    placeholder="John Doe">
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2 opacity-70">Email Address</label>
+                <input type="email"
+                    class="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+                    placeholder="name@company.com">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-sm font-medium mb-2 opacity-70">Password</label>
+                    <input type="password"
+                        class="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+                        placeholder="••••••••">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 opacity-70">Confirm Password</label>
+                    <input type="password"
+                        class="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+                        placeholder="••••••••">
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 py-2">
+                <input type="checkbox" id="terms"
+                    class="w-4 h-4 rounded border-gray-800 bg-gray-900 text-indigo-600 focus:ring-indigo-500">
+                <label for="terms" class="text-xs text-gray-500 leading-tight">I agree to the <a href="terms.html"
+                        class="text-indigo-500 hover:underline">Terms of Service</a> and <a href="privacy.html"
+                        class="text-indigo-500 hover:underline">Privacy Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="btn-primary w-full text-lg mt-4">Create Account</button>
+        </form>
+
+        <p class="text-center text-gray-500 text-sm mt-8">
+            Already have an account? <a href="login.html" class="text-indigo-500 hover:underline font-bold">Sign In</a>
+        </p>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
