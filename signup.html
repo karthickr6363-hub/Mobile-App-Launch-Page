@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Zenith AI</title>
+    <title>Sign Up - Zenith AI</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -46,68 +46,78 @@
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 blur-3xl rounded-full"></div>
     </div>
 
-    <!-- Login Card -->
+    <!-- Signup Card -->
     <div class="w-full max-w-md glass-card p-10 relative">
         <!-- Logo -->
-        <div class="flex flex-col items-center mb-10">
-            <a href="index.html" class="flex flex-col items-center gap-3 group">
+        <div class="flex flex-col items-center mb-6">
+            <a href="index.html" class="flex flex-col items-center gap-2 group">
                 <div
-                    class="w-14 h-14 bg-primary-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-primary-500/30 group-hover:scale-110 transition-transform">
-                    <i class="fas fa-microchip text-2xl"></i>
+                    class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center text-white shadow-xl shadow-primary-500/30">
+                    <i class="fas fa-microchip text-xl"></i>
                 </div>
                 <span
-                    class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-primary-600 to-accent bg-clip-text text-transparent">Zenith
+                    class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-primary-600 to-accent bg-clip-text text-transparent">Zenith
                     AI</span>
             </a>
         </div>
 
-        <h1 class="text-2xl font-bold text-center mb-2">Welcome Back</h1>
-        <p class="text-sm text-center text-slate-500 mb-8">Please enter your details to sign in.</p>
+        <h1 class="text-2xl font-bold text-center mb-2">Create Account</h1>
+        <p class="text-sm text-center text-slate-500 mb-6">Start your journey today.</p>
 
-        <form class="space-y-6">
+        <form class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">First
+                        Name</label>
+                    <input type="text" placeholder="John"
+                        class="w-full bg-slate-100 dark:bg-slate-900 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 transition-all outline-none">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Last
+                        Name</label>
+                    <input type="text" placeholder="Doe"
+                        class="w-full bg-slate-100 dark:bg-slate-900 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 transition-all outline-none">
+                </div>
+            </div>
             <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Email
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Email
                     Address</label>
                 <input type="email" placeholder="name@company.com"
                     class="w-full bg-slate-100 dark:bg-slate-900 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 transition-all outline-none">
             </div>
             <div>
-                <div class="flex justify-between mb-2">
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-400">Password</label>
-                    <a href="#" class="text-xs text-primary-600 hover:underline">Forgot?</a>
-                </div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Password</label>
                 <input type="password" placeholder="••••••••"
                     class="w-full bg-slate-100 dark:bg-slate-900 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 transition-all outline-none">
             </div>
 
             <button type="button" class="cta-button primary w-full shadow-xl shadow-primary-500/20"
-                onclick="window.location.href='dashboard.html'">Sign In</button>
+                onclick="window.location.href='dashboard.html'">Create Account</button>
         </form>
 
-        <div class="relative my-8">
+        <div class="relative my-6">
             <div class="absolute inset-0 flex items-center">
                 <div class="w-full border-t border-slate-200 dark:border-slate-800"></div>
             </div>
-            <div class="relative flex justify-center text-xs uppercase"><span
-                    class="bg-white dark:bg-slate-900 px-2 text-slate-400">Or continue with</span></div>
+            <div class="relative flex justify-center text-[10px] uppercase"><span
+                    class="bg-white dark:bg-slate-900 px-2 text-slate-400">Or sign up with</span></div>
         </div>
 
         <div class="grid grid-cols-2 gap-4">
             <button
                 class="flex items-center justify-center gap-2 py-3 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
                 <i class="fab fa-google text-red-500"></i>
-                <span class="text-xs font-bold uppercase">Google</span>
+                <span class="text-[10px] font-bold uppercase">Google</span>
             </button>
             <button
                 class="flex items-center justify-center gap-2 py-3 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
                 <i class="fab fa-apple text-slate-900 dark:text-white"></i>
-                <span class="text-xs font-bold uppercase">Apple</span>
+                <span class="text-[10px] font-bold uppercase">Apple</span>
             </button>
         </div>
 
-        <p class="text-center text-sm text-slate-500 mt-10">
-            Don't have an account? <a href="signup.html" class="text-primary-600 font-bold hover:underline">Sign up for
-                free</a>
+        <p class="text-center text-sm text-slate-500 mt-8">
+            Already have an account? <a href="login.html" class="text-primary-600 font-bold hover:underline">Sign in</a>
         </p>
     </div>
 
