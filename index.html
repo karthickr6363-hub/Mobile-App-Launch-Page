@@ -111,7 +111,7 @@
                         <i class="fas fa-moon dark:hidden"></i>
                         <i class="fas fa-sun hidden dark:block"></i>
                     </button>
-        
+
                     <a href="signup.html"
                         class="px-6 py-2.5 text-sm font-bold text-white bg-primary-600 rounded-full hover:bg-primary-700 shadow-md hover:shadow-primary-500/40 transition-all">Get
                         Started</a>
@@ -254,7 +254,7 @@
                     </div>
 
                     <!-- Hero Visual -->
-                    <div class="relative">
+                    <div class="relative overflow-hidden">
                         <div
                             class="relative mx-auto w-full max-w-[320px] aspect-[9/18.5] bg-slate-800 rounded-[3rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden animate-float">
                             <!-- Phone Screen Content -->
@@ -279,7 +279,7 @@
         </section>
 
         <!-- App Preview Section -->
-        <section id="screens" class="bg-slate-100 dark:bg-slate-900/50">
+        <section id="screens" class="bg-slate-100 dark:bg-slate-900/50 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="mb-4">Designed for Performance.</h2>
@@ -336,7 +336,7 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="relative">
+        <section id="features" class="relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-20">
                     <h2 class="mb-4">Everything You Need.</h2>
@@ -423,8 +423,7 @@
             </div>
         </section>
 
-        <!-- How It Works Section -->
-        <section id="howitworks" class="bg-slate-50 dark:bg-slate-950">
+        <section id="howitworks" class="bg-slate-50 dark:bg-slate-950 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-20">
                     <h2 class="mb-4">How It Works.</h2>
@@ -482,10 +481,10 @@
         </section>
 
         <!-- Benefits Section -->
-        <section id="benefits">
+        <section id="benefits" class="overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div class="order-2 lg:order-1 relative">
+                    <div class="order-2 lg:order-1 relative overflow-hidden lg:overflow-visible">
                         <!-- Glassmorphism Stats UI -->
                         <div class="absolute -top-10 -left-10 z-20 glass-card p-6 animate-float">
                             <div class="flex items-center gap-4">
@@ -561,7 +560,7 @@
         </section>
 
         <!-- Pricing Section -->
-        <section id="pricing" class="bg-slate-100 dark:bg-slate-900/50">
+        <section id="pricing" class="bg-slate-100 dark:bg-slate-900/50 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="mb-4">Simple, Transparent Pricing.</h2>
@@ -652,7 +651,7 @@
         </section>
 
         <!-- Testimonials -->
-        <section id="reviews">
+        <section id="reviews" class="overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="mb-4">Loved by Thousands.</h2>
@@ -728,7 +727,7 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="bg-slate-50 dark:bg-slate-950">
+        <section id="faq" class="bg-slate-50 dark:bg-slate-950 overflow-hidden">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="mb-4">Frequently Asked Questions.</h2>
@@ -834,7 +833,7 @@
     <!-- Footer -->
     <footer class="bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center text-white">
@@ -883,11 +882,11 @@
                     <h4 class="mb-6">Newsletter</h4>
                     <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Stay updated with our latest news and
                         features.</p>
-                    <form class="flex gap-2">
+                    <form class="flex flex-wrap sm:flex-nowrap gap-2 w-full footer-newsletter-form">
                         <input type="email" placeholder="Email address"
-                            class="flex-1 bg-slate-100 dark:bg-slate-800 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 focus:outline-none">
+                            class="flex-1 min-w-0 w-full bg-slate-100 dark:bg-slate-800 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary-500 focus:outline-none">
                         <button
-                            class="bg-primary-600 text-white p-3 rounded-xl hover:bg-primary-700 transition-colors"><i
+                            class="bg-primary-600 text-white p-3 rounded-xl hover:bg-primary-700 transition-colors shrink-0"><i
                                 class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
